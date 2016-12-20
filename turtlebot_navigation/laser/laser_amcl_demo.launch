@@ -4,7 +4,7 @@
   <node name="laser_filter" pkg="turtlebot_navigation" type="laser_footprint_filter" />
 
   <!-- Run the map server -->
-  <arg name="map_file" default="$(find turtlebot_navigation)/maps/willow-2010-02-18-0.10.yaml"/>
+  <arg name="map_file" default="$(find turtlebot_navigation)/maps/mymap.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!--- Run AMCL -->
